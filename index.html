@@ -12,8 +12,8 @@
     <script language="javascript">
         function autoResizeDiv()
         {
-            document.getElementById('file').style.height = window.innerHeight +'px';
-            document.getElementById('file').style.Width = window.innerWidth +'px';
+            document.getElementById('file').style.height = screen.availHeight +'px';
+            document.getElementById('file').style.Width = screen.availWidth +'px';
         }
         window.onresize = autoResizeDiv;
         autoResizeDiv();
