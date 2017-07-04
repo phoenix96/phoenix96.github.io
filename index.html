@@ -2,7 +2,7 @@
 <html>
   <body>
     <div>
-    <embed id = 'file' src="Resume.pdf"/>
+    <embed id = 'file' width:"100px" src="Resume.pdf"/>
     
     
     
@@ -10,7 +10,6 @@
         function autoResizeDiv()
         {
             document.getElementById('file').style.height = screen.availHeight +'px';
-            document.getElementById('file').style.Width = '1366px';
         }
         window.onresize = autoResizeDiv;
         autoResizeDiv();
