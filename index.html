@@ -6,7 +6,17 @@
     <hr>
     </div>
     <div>
-    <embed style = "width: 100%;" src="Resume.pdf"/>
+    <embed id = 'file' src="Resume.pdf"/>
     </div>
+    
+    <script language="javascript">
+        function autoResizeDiv()
+        {
+            document.getElementById('file').style.height = window.innerHeight +'px';
+            document.getElementById('file').style.Width = window.innerWidth +'px';
+        }
+        window.onresize = autoResizeDiv;
+        autoResizeDiv();
+    </script>
   </body>
 </html>
